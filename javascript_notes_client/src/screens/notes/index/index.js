@@ -1,9 +1,16 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
+import "../../../styles/notes.scss";
+import HeaderLogged from "../../../components/header_logged";
+import Notes from "../../../components/notes";
 
-const Notes = () => (
+function NotesScreen() {
+
+  return(
   <Fragment>
-    Notes
-  </Fragment>
-);
+      <HeaderLogged/>
+      <Notes/>
+    </Fragment>
+  )
+}
 
-export default Notes;
+export default NotesScreen;
